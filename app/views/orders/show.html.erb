@@ -8,6 +8,22 @@
     <h4>Thank you for your order!</h4>
   </div>
 
+  <table class="table table-bordered">
+     <thead>
+       <tr>
+          <th colspan="2">Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+       </tr>
+     </thead>
+     <tbody>
+        <% @items_details.zip(@extra_details).each do |product, extra| %>
+           <%= render 'item', product: product, extra: extra %>
+        <% end %>
+     </tbody>
+   </table>
+
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>

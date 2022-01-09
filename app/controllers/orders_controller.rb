@@ -1,6 +1,10 @@
 class OrdersController < ApplicationController
 
   def show
+    line_items = LineItem.where(order_id: params[:id])
+    @items_details =  line_items.select(:product_id, :quantity, :item_price_cents, :total_price_cents)
+    product_ids = @items_details.map{|item| item[:product_id]}
+    @extra_details = Product.where(id: product_ids)
     @order = Order.find(params[:id])
   end
 
