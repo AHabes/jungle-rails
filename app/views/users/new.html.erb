@@ -1,0 +1,26 @@
+<div class="mainContent">
+  <div class="grid">
+    <h3 class="largeHeader">Welcome to the Jungle! Please signup to start your unique online shopping experience.</h3>
+    <div class="col_1">
+       <%= form_for :user, url: '/users' do |f| %>
+            <label for="name">Full name</label> <br>
+             <%= f.text_field :name %> <br>
+
+            <label for="email">Email</label> <br>
+            <%= f.text_field :email %> <br>
+
+            <label for="password">Password</label> <br>
+            <%= f.password_field :password %> <br>
+
+            <label for="confirmPassword">Confirm password</label> <br>
+            <%= f.password_field :password_confirmation %> <br> <br>
+
+            <%= f.submit 'Sign up', class: 'btn btn-primary' %>
+       <% end %>
+    </div>
+    <br>
+    <p class="centeredDescription col_4">Already signed up? You can
+
+    <%= link_to 'log in here.', 'login' %>
+  </div>
+</div>
