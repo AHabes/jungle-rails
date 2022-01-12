@@ -1,0 +1,20 @@
+<div class="mainContent">
+  <div class="grid">
+    <h3 class="largeHeader">Login to your Jungle account.</h3>
+    <div class="col_1">
+       <%= form_tag '/login' do %>
+            <label for="email">Email</label> <br>
+            <%= text_field_tag :email %> <br> <br>
+
+            <label for="password">Password</label> <br>
+            <%= password_field_tag :password %> <br><br>
+
+            <%= submit_tag "Login", class: 'btn btn-primary' %>
+       <% end %>
+
+    </div>
+
+    <br>
+    <p class="centeredDescription col_4">Not a member ? <%= link_to 'Sign up.', 'signup' %>
+  </div>
+</div>
