@@ -22,7 +22,7 @@ RSpec.feature "Visitor navigates to product details ", type: :feature, js: true 
     visit root_path
     first(".test-id").click
 
-    puts page.html
+    # DEBUG / VERIFY
     expect(page).to have_css 'article.product-detail'
   end
 

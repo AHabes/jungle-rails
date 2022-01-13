@@ -24,7 +24,6 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     # DEBUG / VERIFY
     click_button('Add', match: :first)
     expect(page).to have_content("My Cart (1)")
-    save_screenshot
   end
 
 end
