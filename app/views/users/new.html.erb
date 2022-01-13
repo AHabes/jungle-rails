@@ -3,8 +3,11 @@
     <h3 class="largeHeader">Welcome to the Jungle! Please signup to start your unique online shopping experience.</h3>
     <div class="col_1">
        <%= form_for :user, url: '/users' do |f| %>
-            <label for="name">Full name</label> <br>
-             <%= f.text_field :name %> <br>
+            <label for="first_name">First name</label> <br>
+             <%= f.text_field :first_name %> <br>
+
+            <label for="last_name">Last name</label> <br>
+             <%= f.text_field :last_name %> <br>
 
             <label for="email">Email</label> <br>
             <%= f.text_field :email %> <br>
