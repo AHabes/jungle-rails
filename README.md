@@ -2,6 +2,26 @@
 
 A mini e-commerce application built with Rails 4.2.
 
+## Final Product
+
+![Screenshot of dashboard page](docs/home.png)
+
+![Screenshot of login page](docs/login.png)
+
+![Screenshot of registration page](docs/signup.png)
+
+![Screenshot of registration page](docs/my cart.png)
+
+## Gems
+
+- Rails
+- bcrypt
+- stripe
+- Repec
+- capybara
+- poltergeist
+- database Cleaner
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
