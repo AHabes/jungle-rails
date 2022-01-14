@@ -12,15 +12,6 @@ A mini e-commerce application built with Rails 4.2.
 
 ![Screenshot of registration page](docs/cart.png)
 
-## Gems
-
-- Rails
-- bcrypt
-- stripe
-- Repec
-- capybara
-- poltergeist
-- database Cleaner
 
 ## Additional Steps for Apple M1 Machines
 
@@ -51,3 +42,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+* Bcrypt
+* Repec
+* Capybara
+* Poltergeist
+* Database Cleaner
+
