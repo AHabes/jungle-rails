@@ -10,7 +10,7 @@ A mini e-commerce application built with Rails 4.2.
 
 ![Screenshot of registration page](docs/signup.png)
 
-![Screenshot of registration page](docs/my cart.png)
+![Screenshot of registration page](docs/cart.png)
 
 ## Gems
 
